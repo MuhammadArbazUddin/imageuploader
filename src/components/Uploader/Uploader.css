@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+:root {
+	--blue: #0071FF;
+	--light-blue: #B6DBF6;
+	--dark-blue: #005DD1;
+	--grey: #f2f2f2;
+}
+
+.container {
+	max-width: 400px;
+	width: 100%;
+	background: #fff;
+	padding: 30px;
+	border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative; /* Important for popup positioning */
+}
+
+.img-area {
+	position: relative;
+	width: 100%;
+	height: 240px;
+	background: #ddd;
+	margin-bottom: 30px;
+	border-radius: 15px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.img-area h3 {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 6px;
+    color: #495057;
+}
+
+.img-area p {
+	color: #868e96;
+}
+
+.img-area p span {
+	font-weight: 600;
+}
+
+.img-area img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	z-index: 100;
+}
+
+.select-image {
+	display: block;
+	width: 100%;
+	padding: 16px 0;
+	border-radius: 15px;
+	background-color: #007bff;
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+
+.select-image:hover {
+	background: var(--dark-blue);
+}
+
+.popup {
+	position: absolute;
+	top: 50%;
+	left: 50%; /* Center the popup */
+	transform: translate(-50%, -50%); /* Center the popup */
+	width: 400px; /* Width of the popup */
+	height: 400px; /* Height of the popup */
+	background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 999; /* Ensure it's on top */
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+	transition: opacity 0.3s ease;
+}
+
+.popup h2 {
+	color: #007bff;
+	font-size: 24px; /* Font size for the message */
+	font-weight: 500;
+	margin: 10px 0; /* Margin around the message */
+}
+
+#close-btn {
+	background-color: white;
+	border-radius: 50%;
+	padding: 20px;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 0.3s ease;
+}
+
+#close-btn:hover {
+	background-color: #007bff; /* Change color on hover */
+}
+
+.arrow-icon {
+	font-size: 34px; /* Size of the arrow */
+	color: #007bff; /* Color of the arrow */
+	transition: transform 0.3s ease; /* Rotate effect */
+}
+
+#close-btn:hover .arrow-icon {
+	color: white;
+	transform: rotate(-45deg); /* Rotate on hover */
+}

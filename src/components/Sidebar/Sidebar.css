@@ -1,0 +1,32 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 5vw;
+    background-color: #67696b;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+}
+.icon{
+    height: 40px;
+    width: 40px;
+    fill: #fff;
+}
+
+.globe-btn{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-radius: 10px;
+}
+.globe-btn:hover{
+    background-color: #007bff;
+}
+.btns{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

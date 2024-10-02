@@ -1,0 +1,83 @@
+/* profile.css */
+.profile-page {
+    padding: 20px;
+  }
+  
+  .profile-details, .password-change-section {
+    margin-bottom: 20px;
+  }
+  
+  .password-change-section {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+  }
+  
+  .password-change-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .password-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .change-password-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .change-password-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .password-change-message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #28a745;  /* Success color */
+  }
+  /* profile.css */
+.logout-section {
+    margin-top: 20px;
+  }
+  
+  /* .logout-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #dc3545; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  } */
+  
+  .logout-btn:hover {
+    background-color: #c82333;
+  }
+/* profile.css */
+.back-to-home-section {
+    margin-top: 20px;
+  }
+  
+  .back-to-home-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .back-to-home-btn:hover {
+    background-color: #0056b3;
+  }
+    
